@@ -1,0 +1,77 @@
+.form {
+  display: flex;
+  margin: 0 auto 0 auto;
+  max-width: 300px;
+  flex-direction: column;
+  row-gap: 5px;
+}
+.label {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+}
+.input_text {
+  height: 24px;
+  padding: 5px 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  border: none;
+  border-radius: 10px;
+}
+.add_btn {
+  margin: 10px auto 0 auto;
+  width: 150px;
+  padding: 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 8px;
+  background-color: deeppink;
+  color: white;
+  border: inherit;
+  transition: background-color 250ms linear;
+}
+
+.add_btn:hover,
+.add_btn:focus {
+  background-color: darkorchid;
+}
+.list {
+  margin-top: 30px;
+}
+.item {
+  display: flex;
+  justify-content: space-between;
+}
+.item:not(:last-child) {
+  margin-bottom: 20px;
+}
+.descr {
+  align-self: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+}
+.delete_btn {
+  composes: add_btn;
+  margin: 0;
+  width: 120px;
+  font-size: 16px;
+}
+.filter_wrap {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 15px;
+}
+.filter_text {
+  align-self: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+}
+.filter_input {
+  width: 378px;
+  padding: 5px 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  border: none;
+  border-radius: 10px;
+}
